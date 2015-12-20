@@ -1,0 +1,15 @@
+<ion-view view-title="Subscribed Schools">
+    <ion-content>
+        <ion-list>
+            <ion-item ng-repeat="school in schools" href="#/app/studentprofiles/{{school.school_id}}">
+                <div class="list">
+                    <a class="item item-avatar" href="#">
+                        <img src="">
+                        <h2>{{school.school_name}}</h2>
+                        <p>{{school.school_reg_number}}</p>
+                    </a>
+                </div>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

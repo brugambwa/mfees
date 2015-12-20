@@ -1,0 +1,23 @@
+<ion-view view-title="Pay School Fees">
+    <ion-content>
+        <form ng-submit="submit()">
+        <div class="login-form">  
+            <div class="card">
+                <div class="list">
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label">School Code</span>
+                        <input type="number" name="schoolcode" placeholder="School Code" ng-model="data.schoolcode">
+                    </label>
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label">Student Code</span>
+                        <input type="number" name="studentcode" placeholder="Student Code" ng-model="data.studentcode">
+                    </label>
+                </div>
+            </div>
+            <div class="padding-left padding-right">
+                <input class="button button-block button-positive" type="submit" value="Next" ng-click="queryAccountInfo(data.schoolcode, data.studentcode)">
+            </div>
+        </div>
+            </form>
+    </ion-content>
+</ion-view>

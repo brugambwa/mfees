@@ -1,0 +1,20 @@
+<ion-view view-title="Student Profiles">
+    <ion-nav-buttons side="right">
+        <button class="button button-icon button-clear ion-compose" ng-click="">
+        </button>
+    </ion-nav-buttons>
+    <ion-content>
+        <ion-list>
+            <ion-item ng-repeat="sprofile in sprofiles" href="#/app/studentprofile/{{sprofile.student_code}}">
+                <div class="list">
+                    <a class="item item-avatar" href="#">
+                        <img src="">
+                        <h2>{{sprofile.student_name}}</h2>
+                        <p>{{sprofile.student_code}}</p>
+                    </a>
+                </div>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
+
